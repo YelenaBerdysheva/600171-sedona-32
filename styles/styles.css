@@ -46,5 +46,44 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: brown;
+}
+
+.ad {
     text-align: center;
+    line-height: 36px;
+}
+
+.ad-header {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.ad-text {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.advantages-item-card {
+    text-align: center;
+}
+
+.advantages-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages-number {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.advantages-description {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 }
