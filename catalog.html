@@ -12,13 +12,13 @@
         <nav class="navigation">
             <ul class="navigation-list">
                 <Li class="navigation-item">
-                    <a class="navigation-link" href="main.html">Главная</a>
+                    <a class="navigation-link" href="index.html">Главная</a>
                 </Li>
                 <li class="navigation-item">
                     <a class="navigation-link" href="aboutSedona.html">О Седоне</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="hotels.html">Гостиницы</a>
+                    <a class="navigation-link" href="catalog.html">Гостиницы</a>
                 </li>
 
             </ul>
@@ -41,7 +41,6 @@
 
     <main class="main-inner">
         <header class="inner-header">
-
             <h1 class="breadcrumbs-header">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
@@ -95,28 +94,29 @@
                         Стоимость, ₽:
                     </legend>
                     <label class="catalog-filter-label">
-              от <input class="catalog-filter-input" type="number" name="min-price"> ₽
-            </label>
+                        от <input class="catalog-filter-input" type="number" name="min-price"> ₽
+                    </label>
 
                     <label class="catalog-filter-label">
-              до <input class="catalog-filter-input" type="number" name="max-price"> ₽
-            </label>
-                    <button class="range-toggle toggle-min" type="button">
-              <span class="visually-hidden">Изменить минимальную цену.</span>
-            </button>
-                    <button class="range-toggle toggle-max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
+                      до <input class="catalog-filter-input" type="number" name="max-price"> ₽
+                    </label>
+                    <button class="range-toggle toggle-min" type="secondary-button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="secondary-button">
+                     <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
                 </fieldset>
-                <button class="button" type="submit">
-            Применить   
-          </button>
-                <button class="button cancel" type="submit">
-            Отменить   
-          </button>
+                <button class="secondary-button button-apply" type="submit">
+                    Применить   
+                </button>
+                <button class="secondary-button button-reset" type="submit">
+                    Сбросить   
+                </button>
             </form>
         </header>
         <section class="hotel-catalog">
+            <p class="hotel-number">Найдено гостиниц: 38</p>
             <form class="sorting-type">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
                 <select class="select-control" id="sorting" name="sorting">
@@ -126,13 +126,13 @@
           </select>
                 <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </form>
-            <a href="#" class="button button-light">
+            <a href="#" class="secondary-button button-light">
                 <span class="visually-hidden">Показать список</span>
             </a>
-            <a href="#" class="button button-light">
+            <a href="#" class="secondary-button button-light">
                 <span class="visually-hidden">Полный экран</span>
             </a>
-            <a class="button" href="#">
+            <a class="secondary-button" href="#">
                 <span class="visually-hidden">Показать карточки</span>
             </a>
             <div class="lodging-card">
@@ -142,8 +142,8 @@
                     <b class="lodging-card-type">Гостиница</b>
                     <b class="lodging-card-price">От 4000 ₽</b>
                     <a href="#" class="lodging-card-detail button"></a>
-                    <button class="button favorite">Подробнее</button>
-                    <div class="lodging-rating-likes">В избранное</div>
+                    <button class="secondary-button button-details">Подробнее</button>
+                    <button class="secondary-button button-choose">В избранное</button>
                     <div class="lodging-rating">Рейтинг: 8,5</div>
                 </a>
             </div>
@@ -154,8 +154,8 @@
                     <b class="lodging-card-type">Мотель</b>
                     <b class="lodging-card-price">От 3000 ₽</b>
                     <a href="#" class="lodging-card-detail button"></a>
-                    <button class="button favorite">Подробнее</button>
-                    <div class="lodging-rating-likes">В избранное</div>
+                    <button class="secondary-button button-details">Подробнее</button>
+                    <button class="secondary-button button-choose">В избранное</button>
                     <div class="lodging-rating">Рейтинг: 8,9</div>
                 </a>
             </div>
@@ -166,8 +166,8 @@
                     <b class="lodging-card-type">Апартаменты</b>
                     <b class="lodging-card-price">От 2000 ₽</b>
                     <a href="#" class="lodging-card-detail button"></a>
-                    <button class="button favorite">Подробнее</button>
-                    <div class="lodging-rating-likes">В избранном</div>
+                    <button class="secondary-button button-details">Подробнее</button>
+                    <button class="secondary-button button-chosen">В избранном</button>
                     <div class="lodging-rating">Рейтинг: 9,2</div>
                 </a>
             </div>
@@ -178,14 +178,14 @@
                     <b class="lodging-card-type">Гостиница</b>
                     <b class="lodging-card-price">От 3000 ₽</b>
                     <a href="#" class="lodging-card-detail button"></a>
-                    <button class="button favorite">Подробнее</button>
-                    <div class="lodging-rating-likes">В избранное</div>
+                    <button class="secondary-button button-details">Подробнее</button>
+                    <button class="secondary-button button-choose">В избранное</button>
                     <div class="lodging-rating">Рейтинг: 9,2</div>
                 </a>
             </div>
             <ul class="pagination">
-                <li class="pagination-item">
-                    <a href="" class="pagination-link pagination-current">1</a>
+                <li class="pagination-item pagination-current">
+                    <a href="" class="pagination-link">1</a>
                 </li>
                 <li class="pagination-item">
                     <a href="" class="pagination-link">2</a>
@@ -202,7 +202,7 @@
                 <li class="pagination-item">
                     <a href="" class="pagination-link">10</a>
                 </li>
-                <button class="button pagitation-download-more">Загрузить еще</button>
+                <button class="secondary-button button-pagitation-download-more">Загрузить еще</button>
             </ul>
             <form action="#" class="lodger-number-on-page-form">
                 <label class="lodger-number-on-page-label">гостиниц на старнице:
@@ -226,33 +226,27 @@
     </main>
 
     <footer class="page-footer">
-        <section class="footer-social">
-            <ul class="footer-social-list">
-                <li class="footer-social-item">
-                    <a class="button" href="#">
-                        <span class="vissually-hidden">Твиттер</span>
-                    </a>
-                </li>
-                <li class="footer-social-item">
-                    <a class="button" href="#">
-                        <span class="vissually-hidden">Фейсбук</span>
-                    </a>
-                </li>
-                <li class="footer-social-item">
-                    <a class="button" href="#">
-                        <span class="vissually-hidden">Ютуб</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <section class="footer-contacts">
-            <p class="footer-contacts-text">+7 (812) 812-12-12</p>
-        </section>
-
-        <section class="footer-about">
+        <ul class="footer-social-list">
+            <li class="footer-social-item">
+                <a class="button" href="#">
+                    <span class="vissually-hidden">Твиттер</span>
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a class="button" href="#">
+                    <span class="vissually-hidden">Фейсбук</span>
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a class="button" href="#">
+                    <span class="vissually-hidden">Ютуб</span>
+                </a>
+            </li>
+        </ul>
+        <a class="footer-contacts-text" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="footer-about">
             <p class="footer-about-text-upper">.html</p>
             <p class="footer-about-text-down">academy</p>
-        </section>
+        </div>
     </footer>
 </body>
