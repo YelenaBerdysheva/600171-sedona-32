@@ -42,7 +42,7 @@ body {
 }
 
 .welcome {
-    background-image: url("img/index-background.jpg");
+    background-image: url("../img/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #FFFFFF;
@@ -194,7 +194,7 @@ body {
 .subscribe-news {
     color: #FFFFFF;
     background-color: gray;
-    background-image: url("img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-size: 100% auto;
     font-family: PT Sans;
     font-size: 22px;
@@ -229,6 +229,8 @@ body {
 
 .inner-header {
     background-color: brown;
+    background-image: url('../img/catalog-background.jpg');
+    background-repeat: no-repeat;
 }
 
 .breadcrumbs-header {
