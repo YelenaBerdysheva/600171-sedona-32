@@ -46,6 +46,11 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #FFFFFF;
+    position: absolute;
+    width: 1200px;
+    height: 408px;
+    left: 40px;
+    top: 65px;
 }
 
 .ad {
